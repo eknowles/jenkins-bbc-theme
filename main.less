@@ -145,15 +145,23 @@ h1 {
 }
 
 #header::after {
-  content: 'Jenkins';
+  content: 'continuous integration';
   display: block;
-  height: 100px;
   text-transform: uppercase;
   border-bottom: 0;
   font-family: "Gill Sans MT", "Gill Sans", Arial, Helmet, Freesans, sans-serif;
   background-color: #203558;
   color: #FFFFFF;
   width: 100%;
+  padding: 15px;
+  font-size: 39px;
+  font-weight: 500;
+  height: 32px;
+  line-height: 32px;
+  position: relative;
+  top: -12px;
+  height: 64px;
+  z-index: 1000;
 }
 
 #footer-container a, .top-sticker-inner a {
@@ -203,4 +211,18 @@ table.pane {
   border-radius: 2px;
   box-shadow: 0 0 2px #DDD inset;
   outline: none;
+}
+
+.page_generated {
+  color: #aaaaaa;
+}
+
+.top-sticker {
+  position: relative !important;
+  top: -32px !important;
+  margin-top: 64px;
+}
+
+#page-head {
+  margin-bottom: 64px;
 }
