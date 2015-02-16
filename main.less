@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic);
+@import url(https://fonts.googleapis.com/css?family=RobotoDraft:400,500,700,400italic);
+
+body {
+  font-family: "RobotoDraft", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.23076923;
+  color: rgba(0, 0, 0, 0.84);
+  background-color: #eeeeee;
+}
+
+.pane-frame:hover {
+  border: none !important;
+}
+
+#tasks, #buildQueue, #executors, #main-panel-content, .pane-frame {
+  margin-bottom: 17px;
+  background-color: #ffffff !important;
+  border: none !important;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+#main-panel-content {
+  padding: 15px;
+}
+
+.page-headline {
+  margin-top: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+#side-panel-content {
+  .task {
+    margin-bottom: 0px;
+  }
+}
+
+.fixedGridLayout {
+  #main-panel {
+    padding-left: 361px;
+  }
+}
+
+.task {
+  padding: 10px 20px;
+  img {
+    height: 16px !important;
+    width: 16px !important;
+  }
+}
+
+.task:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#header {
+  color: black;
+  background-color: #FFF;
+  height: 40px;
+  .login {
+    position: relative;
+    top: 6px;
+    color: #333;
+    margin-right: 8px;
+    text-transform: uppercase;
+  }
+}
+
+#breadcrumbBar, #footer-container, .top-sticker-inner {
+  height: 32px;
+  background-color: #1c2e4d;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
+
+#breadcrumbs {
+  list-style-type: none;
+  padding: 0px !important;
+  margin: 0px !important;
+  height: 0px !important;
+  border-bottom: none !important;
+  padding-left: 8px !important;
+  li {
+    float: left;
+    line-height: 32px !important;
+    height: 32px !important;
+    color: #FFF;
+    a:hover {
+      background-color: #203558;
+      color: #FFF !important;
+    }
+  }
+  li.item {
+    a:first-child {
+      padding-right: 25px;
+    }
+  }
+}
+
+#breadcrumbs LI.children, #breadcrumbs LI.separator {
+  padding-left: 20px;
+  width: 20px !important;
+  background-image: url(menu_right_arrow2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#breadcrumbs LI:hover, A.breadcrumbBarAnchor.mouseIsOverMenuSelector {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+#breadcrumbs li.item a, #breadcrumbs li a:link, #breadcrumbs li a:visited, li.children {
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+  display: block;
+  float: left;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff !important;
+  border-right: 1px solid #203558;
+  text-decoration: none;
+}
+
+#menuSelector {
+  background-color: #FFF !important;
+}
+
+.logo {
+  background-image: url('http://static.bbci.co.uk/frameworks/barlesque/2.82.1/desktop/3.5/img/blq-blocks_grey_alpha.png');
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 24px;
+  margin-top: 8px;
+  margin-left: 8px !important;
+  #jenkins-home-link {
+    img {
+      display: none;
+    }
+  }
+}
+
+#header::after {
+  content: 'Jenkins';
+  display: block;
+  height: 100px;
+  text-transform: uppercase;
+  border-bottom: 0;
+  font-family: "Gill Sans MT", "Gill Sans", Arial, Helmet, Freesans, sans-serif;
+  background-color: #203558;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+#footer-container a, .top-sticker-inner a {
+  color: #FFF;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+#footer-container a:hover, .top-sticker-inner a:hover {
+  text-decoration: underline;
+}
+
+table.pane {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.bigtable {
+  th {
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    padding: 10px 8px;
+  }
+  tr:first-child {
+    border: none;
+  }
+  tr {
+    border: none;
+    border-top: 1px solid #bbb;
+  }
+}
+
+#header .login a, #header .login a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+#search-box {
+  background: none;
+  height: 28px;
+  padding-left: 12px;
+  width: 15em;
+  position: static;
+  border: 1px solid #DDD;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #DDD inset;
+  outline: none;
+}
